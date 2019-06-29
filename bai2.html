@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script>
+    let a  = prompt("nhap day so");
+    a.toString();
+    let newStr = [];
+    newStr[0]=a[0];
+    for(let i = 1;i<a.length;i++){
+        if((a[i]%2===0) && (a[i-1]%2)===0){
+            newStr.push('-',a[i]);
+        }
+        else{
+            newStr.push(a[i]);
+        }
+    }
+    document.write(newStr.join(''));
+</script>
+</body>
+</html>
